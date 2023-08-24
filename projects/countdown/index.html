@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="counter">
+        <div class="days">
+            <div id="daycount" class="number">00</div>
+            <div class="text">Days</div>
+        </div>
+        <div class="hour">
+            <div id="hourcount" class="number">00</div>
+            <div class="text">Hours</div>
+        </div>
+        <div class="min">
+            <div id="mincount" class="number">00</div>
+            <div class="text">Minutes</div>
+        </div>
+        <div class="sec">
+            <div id="seccount" class="number">00</div>
+            <div class="text">Seconds</div>
+        </div>
+    </div>
+    <form class="data" id="data">
+        <input type="date" id="date">
+        <input type="time" id="time">
+    </form>
+    <button id="button" class="button">Start</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

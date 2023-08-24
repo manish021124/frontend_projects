@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #ECEFF1;
+    --secondary-color: #343434;
+    --hands-color: #444444;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-size: 40px;
+}
+
+.circle{
+    width: 850px;
+    height: 850px;
+    margin-top: 15px;
+    margin-left: 500px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    background-color: var(--hands-color);
+    z-index: 11;
+    width: 30px;
+    height: 30px;
+    top: 48.5%;
+    left: 48.2%;
+    transform: translate(-50% -50%);
+    border-radius: 50%;
+}
+
+.circle::after{
+    content: '';
+    position: absolute;
+    background-color: rgb(209, 47, 47);
+    z-index: 12;
+    width: 15px;
+    height: 15px;
+    top: 49.3%;
+    left: 49.2%;
+    transform: translate(-50% -50%);
+    border-radius: 50%;
+}
+
+.circle .hand{
+    --rotation: 0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 10;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(calc(var(--rotation)*1deg));
+}
+
+.circle .hand.hour{
+    width: 20px;
+    height: 20%;
+    background-color: var(--primary-color);
+    border: 7px solid var(--hands-color);
+}
+
+.circle .hand.min{
+    width: 10px;
+    height: 30%;
+    background-color: var(--hands-color);
+}
+
+.circle .hand.sec{
+    width: 2px;
+    height: 43.5%;
+    position: absolute;
+    bottom: 45%;
+    background-color: rgb(209, 47, 47);
+    z-index: 13;
+    transform-origin: 100% 88.5%;
+}
+
+.circle .dot{
+    --rotation: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 90px;
+    transform: rotate(var(--rotation));
+}
+
+.circle .dot1{--rotation: 30deg;}
+.circle .dot2{--rotation: 60deg;}
+.circle .dot3{--rotation: 90deg;}
+.circle .dot4{--rotation: 120deg;}
+.circle .dot5{--rotation: 150deg;}
+.circle .dot6{--rotation: 180deg;}
+.circle .dot7{--rotation: 210deg;}
+.circle .dot8{--rotation: 240deg;}
+.circle .dot9{--rotation: 270deg;}
+.circle .dot10{--rotation: 300deg;}
+.circle .dot11{--rotation: 330deg;}
+
+.circle .dot .number{
+    margin: -40px -40px;
+    font-size: 80px;
+    color: var(--secondary-color);
+}
+
+.circle .dot .number1{transform: rotate(-30deg)}
+.circle .dot .number2{transform: rotate(-60deg)}
+.circle .dot .number3{transform: rotate(-90deg)}
+.circle .dot .number4{transform: rotate(-120deg)}
+.circle .dot .number5{transform: rotate(-150deg)}
+.circle .dot .number6{transform: rotate(-180deg)}
+.circle .dot .number7{transform: rotate(-210deg)}
+.circle .dot .number8{transform: rotate(-240deg)}
+.circle .dot .number9{transform: rotate(-270deg)}
+.circle .dot .number10{transform: rotate(-300deg)}
+.circle .dot .number11{transform: rotate(-330deg)}
+
+label{
+    margin-left: 850px;
+}
+
+.switch{
+    position: relative;
+    width: 36px;
+    height: 20px;
+}
+  
+.switch input{ 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    border: 1px solid black;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 3px;
+    background-color: #ECEFF1;
+    border: 1px solid black;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+  
+input:checked + .slider{
+    background-color: black;
+    border: 1px solid white;
+}
+  
+input:focus + .slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before{
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+  
+  /* Rounded sliders */
+.slider.round{
+    border-radius: 40px;
+}
+  
+.slider.round:before{
+    border-radius: 50%;
+}
+
+.nightmode{
+    font-size: 15px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -17px;
+    left: 50px;
+    cursor: pointer;
+}
+
+.dark-mode{
+    --primary-color: black;
+    --secondary-color: white;
+    --hands-color: white;
+    color: white;
+}

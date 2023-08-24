@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.counter div{
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.number{
+    font-size: 60px;
+}
+
+.text{
+    font-size: 20px;
+}
+
+.data input{
+    margin: 10px 3px;
+}
+
+.button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    background-color: green;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+  
+
+
+
+@media only screen and (min-width: 480px){
+    .counter div{
+        padding: 0px 10px;
+    }
+
+    .number{
+        font-size: 70px;
+    }
+
+    .text{
+        font-size: 20px;
+    }
+
+    .data input{
+        font-size: 20px;
+        margin: 15px 5px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .counter div{
+        padding: 0px 20px;
+    }
+
+    .number{
+        font-size: 100px;
+    }
+
+    .text{
+        font-size: 30px;
+    }
+
+    .data input{
+        font-size: 25px;
+        margin: 20px 7px;
+    }
+}
+
+@media only screen and (min-width: 1110px){
+    .counter div{
+        padding: 0px 30px;
+    }
+
+    .number{
+        font-size: 150px;
+    }
+
+    .text{
+        font-size: 40px;
+    }
+
+    .data input{
+        font-size: 30px;
+        margin: 25px 9px;
+    }
+}
+
+@media only screen and (min-width: 1500px){
+    .counter div{
+        padding: 0px 40px;
+    }
+
+    .number{
+        font-size: 200px;
+    }
+
+    .text{
+        font-size: 50px;
+    }
+
+    .data input{
+        font-size: 35px;
+        margin: 30px 11px;
+    }
+}
