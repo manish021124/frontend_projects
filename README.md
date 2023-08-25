@@ -1,4 +1,4 @@
-#FrontEnd Projects For Beginners
+# FrontEnd Projects For Beginners
 
 These are the beginner frontend projects. 
 It only uses html, css and javascript. 
