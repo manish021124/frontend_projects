@@ -16,4 +16,4 @@ There are 9 developed projects that you can review now.
   - Countdown
   - Grocery List
 
-You can check out them [here](https://manish021124.github.io/js-dom-projects/).
+You can check out them [here](https://manish021124.github.io/frontend_projects/).
