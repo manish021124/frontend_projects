@@ -5,7 +5,7 @@ It only uses html, css and javascript.
 
 ## Projects
 
-There are 9 developed projects that you can review now.
+There are 9 developed projects that you can review.
   - Color Flipper
   - Counter
   - Sidebar
@@ -16,4 +16,4 @@ There are 9 developed projects that you can review now.
   - Countdown
   - Grocery List
 
-You can check out them [here](https://manish021124.github.io/frontend_projects/).
+You can check them out [here](https://manish021124.github.io/frontend_projects/).
